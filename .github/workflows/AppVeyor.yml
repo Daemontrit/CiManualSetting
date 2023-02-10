@@ -2,15 +2,11 @@ name: Test
 on: [push, pull_request]
 jobs:
 image: Ubuntu  # образ для сборки
-
 stack: jdk 11  # версия JDK
-
 branches:
   only:
     - master  # ветка git
-
-build: off  # будем использовать свой скрипт сборки
-
+build: off  
 install:
 chmod +x gradlew 
 
